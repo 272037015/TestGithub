@@ -1,3 +1,3 @@
-本文内容则简单介绍CSS3出现了两个与混合模式有关的属性，mix-blend-mode和background-blend-mode.
+1.本文内容则简单介绍CSS3出现了两个与混合模式有关的属性，mix-blend-mode和background-blend-mode.
 
 在Photoshop这样的制图软件中图层的混合模式有近27种，但在CSS混合模式中，目前仅有16种：normal，multiply,screen,overlay,darken,lighten,color-dodge,color-burn,hard-light,soft-light,difference,exclusion,hue,saturation,color,luminosity。
