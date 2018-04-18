@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>背景颜色跟图片混合</title>
+	<style type="text/css">
+		*{margin:0; padding:0;}
+		.bg{ width: 1000px; height: 500px;  background-color: #ddd; }
+		.demo{ margin:10px auto; width: 737px; height: 327px;mix-blend-mode: darken; }
+		.demo img{ width: 100%; }
+	</style>
+</head>
+<body>
+
+	<div class="bg">
+		<div class="demo"><img src="images/img.png" alt="" /></div>
+	</div>
+
+
+	<strong>兼容性不好，IE不兼容，所以图片最好是png透明格式</strong>
+</body>
+</html>

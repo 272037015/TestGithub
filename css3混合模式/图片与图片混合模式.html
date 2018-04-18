@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片与图片混合模式</title>
+	<style type="text/css">
+		*{margin:0; padding:0;}
+		.wrap{ width: 1000px; margin:0 auto; overflow: hidden; position: relative; }
+		.bg{ width: 1000px; height: 500px;}
+		.demo{ margin:10px auto; width: 737px; height: 327px;mix-blend-mode: darken; position: absolute; top:0; left: 0; z-index: 1; }
+		.demo img{ width: 100%; }
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="bg"><img src="images/bg.jpg" alt="" /></div>
+		<div class="demo"><img src="images/img.png" alt="" /></div>
+	</div>
+
+	<strong>兼容性不好，IE不兼容，所以图片最好是png透明格式</strong>
+</body>
+</html>
