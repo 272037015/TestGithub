@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>透明遮罩</title>
+    <style type="text/css">
+    
+    body{background:url(images/img.jpg) top center no-repeat; }
+
+    .editor-shell {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        position: absolute;
+        pointer-events: none;
+        z-index: 1;
+        box-shadow: 0 0 0 9999px rgba(0, 0, 0, .5);
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="editor-shell" id="demo"></div>
+    </div>
+    <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    <script>
+    $(document).on("mousemove", function(event) {
+        $("#demo").css({
+            "top": event.pageY,
+            "left": event.pageX
+        });
+    });
+    </script>
+</body>
+
+</html>
