@@ -46,4 +46,6 @@ body {
             font-size: 843.75%;
         }
     }
+    /*设计稿px换算直接/100即可得到rem值。*/
+
 .demo{ width:2.5rem; height: 2.5rem;  background: red;  }
