@@ -1,8 +1,7 @@
 body {
         max-width: 750px;
         margin: 0 auto;
-        font-style: 16px;
-        margin:0;
+        font-size: 16px;
         padding:0;
         background-color: #ddd;
     }
