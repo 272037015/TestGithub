@@ -104,19 +104,11 @@ var app = {
     // 客服
     fixedServer:function(){
         $('.m_service_hide').on('click',function(){
-            $(this).hide()
-            if ($(".m_service_wx").is(":hidden")) {
-                $(".m_service_wx").show();
-            } else {
-                $(".m_service_wx").hide();
-            }
+            $(this).animate({marginRight: '0px'}, '0');
             event.stopPropagation();
         });
         $('body').click(function() {
-            if (!$(".m_service_wx").is(":hidden")) {
-                $(".m_service_wx").hide();
-                $('.m_service_hide').show()
-            }
+           $('.m_service_hide').animate({marginRight: '-85px'}, '0');
         });
         
     }
