@@ -7,6 +7,7 @@ var app = {
         });
         $('#popCancel').on('click', function() { //点击取消
             $('#popSign').hide(); //登录弹窗隐藏
+            $('body').removeClass('base_popup');
         });
         $('#popSubmit').on('click', function() {
             var phone = $('#phone').val(); //手机号码
