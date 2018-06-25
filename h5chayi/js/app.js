@@ -1,23 +1,8 @@
 var app = {
-    //  scrollFun: function () {
-    //     var thisTop = 0,
-    //         oldTop = 0;
-    //     var windowH = $(window).height();
-    //     $(window).scroll(function () {
-    //         thisTop = $(this).scrollTop();
-    //         if (thisTop >= oldTop && thisTop > 50) {
-    //             // 上
-    //             !$('body').hasClass('base_fixed') && $('body').addClass('base_fixed');
-    //         } else {
-    //             // 下
-    //             $('body').hasClass('base_fixed') && $('body').removeClass('base_fixed');
-    //         }
-    //         setTimeout(function () {oldTop = thisTop;}, 0);
-    //     })
-    // },
     // 登录
     sign: function() {
         $('#showPopupPhone').on('click', function() {
+            $('body').addClass('base_popup');//body加类，阻止浏览器底层滚动
             $('#popSign').show(); //登录弹窗显示
         });
         $('#popCancel').on('click', function() { //点击取消
