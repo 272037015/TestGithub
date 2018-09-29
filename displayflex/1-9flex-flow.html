@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>wrap换行</title>
+    <title>flex-flow属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap​​​​​​​</title>
     <style>
         * {
             margin: 0;
@@ -26,9 +26,10 @@
             border-right: 1px solid red;
             overflow: hidden;
             display: flex;
-            flex-direction:row; 
             justify-content:center;
-            flex-wrap:wrap;
+            /*flex-direction:row; 
+            flex-wrap:wrap;*/
+            flex-flow: row wrap;
             
         }
 
