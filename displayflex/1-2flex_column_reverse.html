@@ -26,11 +26,10 @@
             border-right: 1px solid red;
             overflow: hidden;
             display: flex;
+            -webkit-display: flex;
             /* flex-direction:指定排列方向 */
             /*列 垂直排布*/
-            flex-direction:column;
-            /*行，水平排布，也是默认形式*/
-            /* flex-direction:row; */
+            flex-direction:column-reverse;
         }
 
         .b {
@@ -55,9 +54,9 @@
 
 <body>
     <div class="box">
-        <div class="b b1"></div>
-        <div class="b b2"></div>
-        <div class="b b3"></div>
+        <div class="b b1">1</div>
+        <div class="b b2">2</div>
+        <div class="b b3">3</div>
     </div>
 
 
