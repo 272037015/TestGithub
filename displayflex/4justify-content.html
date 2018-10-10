@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> justify-content属性解析</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        body {
+            width: 1360px;
+            margin: 0 auto
+        }
+
+        .box {
+            background-color: #999;
+            width: 400px;
+            height: 330px;
+            margin: 15px;
+            overflow: hidden;
+            display: flex;
+            display: -webkit-flex;
+            float: left;
+        }
+
+        .b {
+            width: 100px;
+            height: 100px;
+            background-color: #ddd;
+        }
+
+        .b1 {
+            background-color: rgb(70, 248, 129);
+        }
+
+        .b2 {
+            background-color: rgb(252, 211, 30);
+        }
+
+        .b3 {
+            background-color: blueviolet;
+        }
+
+        .box1 {
+            /*行，水平排布，也是默认形式*/
+            flex-direction: row;
+            /* justify-content  对齐 控制子元素对齐方向 */
+            justify-content: flex-start;
+            /*左对齐*/
+        }
+
+        .box2 {
+            /*行，水平排布，也是默认形式*/
+            flex-direction: row;
+            /* justify-content  对齐 控制子元素对齐方向 */
+            justify-content: flex-end;
+            /*右对齐*/
+        }
+
+        .box3 {
+            /*行，水平排布，也是默认形式*/
+            flex-direction: row;
+            /* justify-content  对齐 控制子元素对齐方向 */
+            justify-content: center;
+            /*居中*/
+        }
+
+        .box4 {
+            /*行，水平排布，也是默认形式*/
+            flex-direction: row;
+            /* justify-content  对齐 控制子元素对齐方向 */
+            justify-content: space-between;
+            /*两端对齐，项目之间的间隔都相等*/
+        }
+        .box5 {
+            /*行，水平排布，也是默认形式*/
+            flex-direction: row;
+            /* justify-content  对齐 控制子元素对齐方向 */
+            justify-content: space-around;
+            /*每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        <div class="b b1">1</div>
+        <div class="b b2">2</div>
+        <div class="b b3">3.flex-start-1</div>
+    </div>
+    <div class="box box2">
+        <div class="b b1">1</div>
+        <div class="b b2">2</div>
+        <div class="b b3">3.flex-end-2</div>
+    </div>
+    <div class="box box3">
+        <div class="b b1">1</div>
+        <div class="b b2">2</div>
+        <div class="b b3">3.center-3</div>
+    </div>
+    <div class="box box4">
+        <div class="b b1">1</div>
+        <div class="b b2">2</div>
+        <div class="b b3">3.space-between-4</div>
+    </div>
+    <div class="box box5">
+        <div class="b b1">1</div>
+        <div class="b b2">2</div>
+        <div class="b b3">3.space-around-5</div>
+    </div>
+
+
+</body>
+
+</html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> justify-content属性解析</title>
+    <title>flex-flow属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap​​​​​​​</title>
     <style>
         * {
             margin: 0;
@@ -13,28 +13,26 @@
         }
 
         body {
-            max-width: 640px;
+            max-width: 430px;
             margin: 0 auto;
             background-color: #f5f5f5;
         }
 
         .box {
             background-color: #999;
-            height: 400px;
+            height: 200px;
             width: 100%;
-            border-left: 1px solid red;
-            border-right: 1px solid red;
             overflow: hidden;
             display: flex;
-             /* row-reverse 列当中倒序 */
-            flex-direction:row-reverse;
-            /* justify-content  对齐 控制子元素对齐方向 */
-            justify-content: space-between;/*左边靠左对齐，右边靠右对齐,中间平均分布*/
+            display: -webkit-flex;
+            /*flex-direction:row;
+            flex-wrap:wrap;*/
+            flex-flow: row wrap;
 
         }
 
         .b {
-            width: 100px;
+            width: 150px;
             height: 100px;
             background-color: #ddd;
         }
@@ -59,8 +57,6 @@
         <div class="b b2">2</div>
         <div class="b b3">3</div>
     </div>
-
-
 </body>
 
 </html>
