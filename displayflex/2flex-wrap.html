@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> flex-direction的应用</title>
+    <title>flex-wrap如何换行</title>
     <style>
         * {
             margin: 0;
@@ -24,13 +24,14 @@
             margin: 15px;
             overflow: hidden;
             display: flex;
-            display: -webkit-flex; /* Safari */
+            display: -webkit-flex;
+            /* Safari */
             float: left;
 
         }
 
         .b {
-            width: 100px;
+            width: 150px;
             height: 100px;
             background-color: #ddd;
         }
@@ -48,49 +49,42 @@
         }
 
         .box1 {
-            /*行，水平排布，也是默认形式*/
-            flex-direction: row;
-            height: 200px;
+            flex-wrap: nowrap;
         }
 
         .box2 {
-            flex-direction: row-reverse;
-            /*行 倒序时顶在右边*/
-            height: 200px;
+            flex-wrap: wrap
         }
-
         .box3 {
-            /*列 垂直排布*/
-            flex-direction: column;
+            flex-wrap: wrap-reverse;
         }
-
         .box4 {
-            /*列 垂直排布*/
-            flex-direction: column-reverse;
+            flex-wrap: wrap-reverse;
+            height: 200px;
         }
     </style>
 </head>
 
 <body>
     <div class="box box1">
-        <div class="b b1">1.</div>
+        <div class="b b1">1</div>
         <div class="b b2">2</div>
-        <div class="b b3">3.row-1</div>
+        <div class="b b3">3.nowrap-1</div>
     </div>
     <div class="box box2">
         <div class="b b1">1</div>
         <div class="b b2">2</div>
-        <div class="b b3">3.row-reverse-2</div>
+        <div class="b b3">3.wrap-2</div>
     </div>
     <div class="box box3">
         <div class="b b1">1</div>
         <div class="b b2">2</div>
-        <div class="b b3">3.column-3</div>
+        <div class="b b3">3.wrap-reverse-3</div>
     </div>
     <div class="box box4">
         <div class="b b1">1</div>
         <div class="b b2">2</div>
-        <div class="b b3">3.column-reverse-4</div>
+        <div class="b b3">3.wrap-reverse-4</div>
     </div>
 </body>
 
