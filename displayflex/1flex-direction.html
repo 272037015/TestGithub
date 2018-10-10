@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> flex-direction的应用</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        body {
+            width: 860px;
+            margin: 0 auto
+        }
+
+        .box {
+            background-color: #999;
+            width: 400px;
+            height: 330px;
+            margin: 15px;
+            overflow: hidden;
+            display: flex;
+            -webkit-display: flex;
+            float: left;
+
+        }
+
+        .b {
+            width: 100px;
+            height: 100px;
+            background-color: #ddd;
+        }
+
+        .b1 {
+            background-color: rgb(70, 248, 129);
+        }
+
+        .b2 {
+            background-color: rgb(252, 211, 30);
+        }
+
+        .b3 {
+            background-color: blueviolet;
+        }
+
+        .box1 {
+            /*行，水平排布，也是默认形式*/
+            flex-direction: row;
+            height: 200px;
+        }
+
+        .box2 {
+            flex-direction: row-reverse;
+            /*行 倒序时顶在右边*/
+            height: 200px;
+        }
+
+        .box3 {
+            /*列 垂直排布*/
+            flex-direction: column;
+        }
+
+        .box4 {
+            /*列 垂直排布*/
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        <div class="b b1">1.</div>
+        <div class="b b2">2</div>
+        <div class="b b3">3.row-1</div>
+    </div>
+    <div class="box box2">
+        <div class="b b1">1</div>
+        <div class="b b2">2</div>
+        <div class="b b3">3.row-reverse-2</div>
+    </div>
+    <div class="box box3">
+        <div class="b b1">1</div>
+        <div class="b b2">2</div>
+        <div class="b b3">3.column-3</div>
+    </div>
+    <div class="box box4">
+        <div class="b b1">1</div>
+        <div class="b b2">2</div>
+        <div class="b b3">3.column-reverse-4</div>
+    </div>
+</body>
+
+</html>
