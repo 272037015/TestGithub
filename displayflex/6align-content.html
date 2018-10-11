@@ -51,8 +51,7 @@
         }
 
         .box1 {
-            /*行，水平排布，也是默认形式*/
-            flex-direction: row;
+            flex-flow: row wrap;
             /* justify-content  对齐 控制子元素对齐方向 */
             justify-content: flex-start;
             /*左对齐*/
@@ -60,8 +59,7 @@
         }
 
         .box2 {
-            /*行，水平排布，也是默认形式*/
-            flex-direction: row;
+            flex-flow: row wrap;
             /* justify-content  对齐 控制子元素对齐方向 */
             justify-content: flex-end;
             /*右对齐*/
@@ -69,17 +67,14 @@
         }
 
         .box3 {
-            /*行，水平排布，也是默认形式*/
-            flex-direction: row;
-            /* justify-content  对齐 控制子元素对齐方向 */
-            justify-content: center;
+            flex-flow: row wrap;
+            justify-content:center;
             /*居中*/
             align-content:center/*与交叉轴的中点对齐*/
         }
 
         .box4 {
-            /*行，水平排布，也是默认形式*/
-            flex-direction: row;
+            flex-flow: row wrap;
             /* justify-content  对齐 控制子元素对齐方向 */
             justify-content: space-between;
             /*两端对齐，项目之间的间隔都相等*/
@@ -87,16 +82,14 @@
         }
 
         .box5 {
-            /*行，水平排布，也是默认形式*/
-            flex-direction: row;
+            flex-flow: row wrap;
             /* justify-content  对齐 控制子元素对齐方向 */
             justify-content: space-around;
             /*每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍*/
             align-content:space-around/*每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。*/
         }
         .box6{
-            /*行，水平排布，也是默认形式*/
-            flex-direction: row;
+            flex-flow: row wrap;
             /* justify-content  对齐 控制子元素对齐方向 */
             justify-content: space-around;
             /*每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍*/
@@ -109,31 +102,49 @@
     <div class="box box1">
         <div class="b b1">1</div>
         <div class="b b2">2</div>
+        <div class="b b2">2</div>
+        <div class="b b2">2</div>
+        <div class="b b2">2</div>
         <div class="b b3">3.flex-start-1</div>
     </div>
     <div class="box box2">
         <div class="b b1">1</div>
+        <div class="b b2">2</div>
+        <div class="b b2">2</div>
+        <div class="b b2">2</div>
         <div class="b b2">2</div>
         <div class="b b3">3.flex-end-2</div>
     </div>
     <div class="box box3">
         <div class="b b1">1</div>
         <div class="b b2">2</div>
+        <div class="b b2">2</div>
+        <div class="b b2">2</div>
+        <div class="b b2">2</div>
         <div class="b b3">3.center-3</div>
     </div>
     <div class="box box4">
         <div class="b b1">1</div>
+        <div class="b b2">2</div>
+        <div class="b b2">2</div>
+        <div class="b b2">2</div>
         <div class="b b2">2</div>
         <div class="b b3">3.space-between-4</div>
     </div>
     <div class="box box5">
         <div class="b b1">1</div>
         <div class="b b2">2</div>
+        <div class="b b2">2</div>
+        <div class="b b2">2</div>
+        <div class="b b2">2</div>
         <div class="b b3">3.space-around-5</div>
     </div>
     <div class="box box6">
         <div class="b4">1</div>
         <div class="b4">2</div>
+        <div class="b4">2</div>
+        <div class="b4" style="background-color:red">2</div>
+        <div class="b4" style="background-color:#ddd">2</div>
         <div class="b4">3.stretch-5</div>
     </div>
 
