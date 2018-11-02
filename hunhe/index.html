@@ -1,121 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script><script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{margin:0; padding:0;}
+		body{ background:#ebebeb url(images/bg.jpg) no-repeat top center; }
+		.demo{ margin:10px auto; width: 737px; height: 327px;mix-blend-mode: darken; }
+		.demo img{ width: 100%; }
+	</style>
 </head>
 <body>
-    <h3>声明式渲染</h3>
-    <div id="app">{{words}}</div>
-    <script>
-    // 实例化vue对象
-    var app = new Vue ({
-        el:"#app",  //el:element　需要获取的元素,一定是html中的根容器元素.
-        data:{     //data:用于数据的存储
-            words:"欢迎来到中国"
-        }
-    })
-    </script>
-    <h3>绑定元素特性,中间放一个冒号隔开</h3>
-    <div id="app-2" v-bind:title="txt">标题标题</div>
-    <script>
-    var app2 = new Vue ({
-        el:"#app-2",
-        data:{
-            txt:"页面加载" + new Date().toLocaleString()
-        }
-    })
-    </script>
-    <h3>v-if是条件渲染指令，它根据表达式的真假来删除和插入元素</h3>
-    <div id="app-3">
-        <p v-if="seen">现在你可以看到我了</p>
-    </div>
-    <script>
-        var app3 = new Vue({
-            el:"#app-3",
-            data:{
-                seen: true
-            }
-
-        })
-    </script>
-    <h3>v-show也是条件渲染指令，和v-if指令不同的是，使用v-show指令的元素始终会被渲染到HTML，它只是简单地为元素设置CSS的style属性。</h3>
-    <div id="app-4">
-        <p v-show="yes">Yes!</p>
-        <p v-show="no">No!</p>
-        <p v-show="age >= 25">Age: {{ age }}</p>
-        <p v-show="name.indexOf('jack') >= 0">Name: {{ name }}</p>
-    </div>
-    <script>
-        var app4 = new Vue({
-            el: '#app-4',
-            data: {
-                yes: true,
-                no: false,
-                age: 28,
-                name: 'keepfool'
-            }
-        })
-    </script>
-    <h3>v-else元素必须立即跟在v-if或v-show元素的后面——否则它不能被识别。</h3>
-    <div id="app-5">
-            <p v-if="age >= 25">Age: {{ age }}</p>
-            <!-- <p>看大结局</p> -->
-            <p v-else>Name: {{ name }}</p>
-            <p v-show="name.indexOf('keep') >= 0">Name: {{ name }}</p>
-            <p v-else>Sex: {{ sex }}</p>
-    </div>
-    <script>
-        var app5 = new Vue({
-            el: '#app-5',
-            data: {
-                age: 22,
-                name: 'keepfool',
-                sex: 'Male'
-            }
-        })
-    </script>
-    <h3>v-for</h3>
-    <div id="app-6">
-        <p v-for="todo in todos">
-            {{todo.text}}
-        </p>
-    </div>
-    <script>
-    var app6 = new Vue({
-        el:"#app-6",
-        data:{
-            todos:[
-                {text:'学习使我充实'},
-                {text:'我爱学习'},
-                {text:'学习使我快乐'}
-            ]
-        }
-    })
-    </script>
-
-    <div id="app-7">
-        <p>{{mes}}</p>
-        <button v-on:click="btn">按钮</button>
-    </div>
-    <script>
-    var app7 = new Vue({
-        el:"#app-7",
-        data:{
-            mes:"昵称"
-        },
-        methods:{    //methods:用于存储各种方法
-            btn:function(){
-                this.mes = this.mes.split('').reverse().join('')
-            }
-
-        }
-    })
-    </script>
-
-
+	<div class="demo"><img src="images/img.png" alt="" /></div>
+	
 </body>
 </html>
