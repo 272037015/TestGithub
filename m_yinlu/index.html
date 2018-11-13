@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/flickerplate.css"  type="text/css" rel="stylesheet">
+
+</head>
+
+<body class="index_body">
+    <div id="J_auto_height">
+        <div class="m_head_wrap">
+            <div class="m_head">
+                <a href="nav.html" class="m_head_menu"></a>
+                <h1><a href="javascript:;" class="m_head_logo"><img src="images/logo.png" alt="隐庐" /></a></h1>
+            </div>
+        </div>
+        <div class="flicker-example" data-block-text="false">
+            <ul>
+                <li data-background="http://img.d1xz.net/d/2018/11/5be927cb9fc0e.jpg"></li>
+                <li data-background="http://img.d1xz.net/d/2018/11/5be9281f8a130.jpg"></li>
+                <li data-background="http://img.d1xz.net/d/2018/11/5be927dd9294b.jpg"></li>
+            </ul>
+        </div>
+        <ul class="nav_list">
+            <li><a href="list.html">大师建盏</a></li>
+            <li><a href="list.html">收藏重器</a></li>
+            <li><a href="list.html">青 瓷</a></li>
+            <li><a href="list.html">柴烧单品</a></li>
+        </ul>
+        <div class="m_tab_wrap">
+            <div class="m_tab">
+                <a href="index.html" class="m_tab_home">首页</a>
+                <a href="javascript:;" class="m_tab_wx" id="addWeChat">添加微信</a>
+                <a href="tel:13074809051" class="m_tab_customer">客服</a>
+            </div>
+        </div>
+        <div class="m_pop_wrap" id="showPopWeixin">
+            <div class="mpw_box" id="showWeixinBox">
+                <p class="mpw_box_wx" id="showWeixinNum">130 7480 9051</p>
+                <p class="mpw_box_words" id="showWeixinBtn">长按复制 — 添加微信</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+    <!-- 背景图片轮播flickerplate插件 -->
+    <script src="js/modernizr-custom-v2.7.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery-finger-v0.1.0.min.js" type="text/javascript"></script>
+    <script src="js/flickerplate.min.js" type="text/javascript"></script>
+    <script>
+    $(document).ready(function(){
+        $('#J_auto_height').height(window.innerHeight>568?window.innerHeight:568)
+        $('.flicker-example').flicker({
+        auto_flick_delay:2,//自动播放间隔，以秒为单位
+        dot_navigation:false,//圆点导航
+        arrows:false //左右箭头控制
+        });
+
+    });
+    </script>
+
+</body>
+
+</html>
