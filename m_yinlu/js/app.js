@@ -64,29 +64,50 @@ var app = {
     },
     // 首页背景轮播
     isBg: function() {
-        var Fpic = $("#indexBg li"); //获取li
-        //图片轮播动画
-        var FpicNum = Fpic.length; //获取li个数
-        Fpic.eq(0).fadeIn(); //第一个显示
-        var now = 0;//初始值
-        //按照指定的周期
-         setInterval(function() {
-            if (now >= FpicNum - 1) {
-                Fpic.eq(FpicNum - 1).stop().fadeOut(2000); //停止前面返回元素所有动画效果；添加一个新动画，淡出，耗时2000ms
-                now = -1;
-            }
-            Fpic.eq(now).stop().fadeOut(2000); //隐藏
-            now++;
-            Fpic.eq(now).stop().fadeIn(2000); //显示
-        }, 3000);
-        
+        // var Fpic = $("#indexBg li"); //获取li
+        // //图片轮播动画
+        // var FpicNum = Fpic.length; //获取li个数
+        // // Fpic.eq(0).fadeIn(); //第一个显示
+        // Fpic.eq(0).show(); //第一个显示
+        // var now = 0;//初始值
+        // // //按照指定的周期
+        // setInterval(function() {
+        //     if (now >= FpicNum - 1) {
+        //         Fpic.eq(FpicNum - 1).stop().fadeOut(2000); //停止前面返回元素所有动画效果；添加一个新动画，淡出，耗时2000ms
+        //         now = -1;
+        //     }
+        //     Fpic.eq(now).stop().fadeOut(2000); //隐藏
+        //     now++;
+        //     Fpic.eq(now).stop().fadeIn(2000); //显示
+        // }, 3000);
 
-
-        $('#J_auto_height').height(window.innerHeight>568?window.innerHeight:568)
+        this.slideshow()
+        $('#J_auto_height').height(window.innerHeight > 568 ? window.innerHeight : 568)
         // 禁止滚动（阻止苹果浏览器的默认行为）
         $('#J_auto_height').on("touchmove", function() {
             event.preventDefault();
         });
+    },
+    slideshow: function() {
+        var slideshow = document.getElementById("indexBg"),
+            imgs = slideshow.getElementsByTagName("li"), //得到图片们
+            current = 0; //current为当前活跃的图片编号
+
+        function slideOff() {
+            imgs[current].className = ""; //图片淡出
+        }
+
+        function slideOn() {
+            imgs[current].className = "active"; //图片淡入
+        }
+
+        function changeSlide() { //切换图片的函数
+            slideOff(); //图片淡出
+            current++; //自增1
+            if (current >= 3) current = 0;
+            slideOn(); //图片淡入
+        }
+        var slideon=setInterval(changeSlide,2000);  
     },
     //客服咨询
     customerService: function() {
