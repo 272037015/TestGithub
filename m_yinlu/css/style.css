@@ -68,14 +68,16 @@ input,img{border:none;}
 .m_title{height: 1.16rem; line-height: 1.16rem; background-color: #000;overflow: hidden; font-size: .32rem; color: #fff; text-align: center}
 /*公共-底部导航悬浮*/
 .m_tab_wrap{ height: 1rem; overflow: hidden; font-size: .28rem; }
-.m_tab{ position: fixed; right: 0; bottom:0; left: 0; background-color: #3e3a39; color: #fff; height: 1rem; z-index: 1}
-.m_tab a{ position: relative; float: left; width: 33.33%; box-sizing: border-box; text-align: center; color: #fff; height: 1rem; }
+.m_tab{ position: fixed; right: 0; bottom:0; left: 0; background-color: #3e3a39; color: #fff; height: 1rem; z-index: 1;}
+.m_tab a{ position: absolute; text-align: center; color: #fff; height: 1rem; }
 .m_tab a:after{ content: ""; position: absolute; top:.1rem; left: 50%; transform: translateX(-50%);-webkit-transform: translateX(-50%); background: url(../images/icon_tab.png) no-repeat center; width: .54rem; height: .46rem; overflow: hidden; }
-.m_tab .m_tab_home:after{ background-position: 0 0; background-size: 100% auto; }
+.m_tab .m_tab_home:after{background-position: 0 0; background-size: 100% auto; }
 .m_tab .m_tab_wx:after{ background-position: 0 -0.46rem; background-size: 100% auto; }
 .m_tab .m_tab_customer:after{ background-position: 0 -0.92rem; background-size: 100% auto; }
-
-.m_tab span{ display: block; height: .5rem; line-height: .5rem; margin-top: .5rem; }
+.m_tab .m_tab_home{ left: .5rem; top:0;  }
+.m_tab .m_tab_wx{ left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%); top:0;  }
+.m_tab .m_tab_customer{ right: .5rem; top:0;  }
+.m_tab span{ display: block; height: .5rem; line-height: .5rem; margin-top: .5rem;  }
 /*公共弹窗loading*/
 .m_fixed_loading{background-color: rgba(0,0,0,.6);position: fixed;width: 100%;height: 100%;top:0;left:0;z-index: 4; display: none;}
 .m_fixed_loading:after{content:'';position: absolute;width: 40px;height: 40px;top: 50%;left: 50%;margin:-20px 0 0 -20px;border-radius: 50%;border: 4px solid #000;border-color: #f0cb95 transparent #f0cb95 transparent;-webkit-animation: fixedLoad 1s linear infinite;animation: fixedLoad 1s linear infinite;}
