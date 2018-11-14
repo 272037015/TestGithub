@@ -60,10 +60,11 @@
     <script>
     $(document).ready(function(){
         $('#J_auto_height').height(window.innerHeight)
+        // 禁止滚动（阻止苹果浏览器的默认行为）
         $('#J_auto_height').on("touchmove",function(){ 
 　　　　event.preventDefault(); }); 
         $('.flicker-example').flicker({
-        auto_flick_delay:2,//自动播放间隔，以秒为单位
+        auto_flick_delay:3,//自动播放间隔，以秒为单位
         dot_navigation:false,//圆点导航
         arrows:false //左右箭头控制
         });
