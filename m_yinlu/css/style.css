@@ -89,8 +89,8 @@ input,img{border:none;}
 @-webkit-keyframes alertAnim {0% {transform: translateX(-50%);-webkit-transform: translateX(-50%);}20% {transform: translateX(-45%);-webkit-transform: translateX(-45%);}40% {transform: translateX(-55%);-webkit-transform: translateX(-55%);}60% {transform: translateX(-45%);-webkit-transform: translateX(-45%);}80% {transform: translateX(-55%);-webkit-transform: translateX(-55%);}100% {transform: translateX(-50%);-webkit-transform: translateX(-50%);}}
 
 /*弹窗-底部点击添加微信弹窗*/
-.m_pop_wrap{position: fixed; top:0; right: 0; bottom:0; left: 0; z-index: 2; background-color: rgba(0,0,0,.6); display: none;}
-.mpw_box{ position: absolute; top:50%; left: 50%; margin-left: -43%; margin-top:-0.7rem;  width: 86%; background-color: #fff;
+.m_pop_wrap{position: fixed; top:0; right: 0; bottom:0; left: 0; z-index: 2; background-color: rgba(0,0,0,.7); display: none;}
+.mpw_box{ position: absolute; top:56%; left: 50%; margin-left: -43%;  width: 86%; background-color: #fff;
 	border:1px solid #9d9c9c;text-align: center; font-size: .32rem; color: #000}
 .mpw_box_wx,
 .mpw_box_words{ border-top:1px solid #9d9c9c; }
