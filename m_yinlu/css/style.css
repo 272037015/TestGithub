@@ -144,13 +144,13 @@ input,img{border:none;}
 }
 
 /*首页*/
-/*.index_body{ background-color: #000; overflow-y: hidden;}*/
+.index_body{ background-color: #000; overflow-y: hidden;}
 /*首页-菜单*/
 .nav_list{ position: fixed; bottom:15%; left: 0; right: 0; z-index: 1; overflow: hidden; margin:0 .38rem; }
 .nav_list li{ float: left; width: 50%; padding:0 .18rem; box-sizing: border-box; text-align: center; margin-top: .2rem; }
 .nav_list a{ display: block; height: .6rem;line-height: .6rem; color: #fff; font-size:.32rem; border:1px solid #fff; font-weight: 700 }
 /*重写  背景图不随滚动条滚动*/
-.flickerplate ul.flicks>li{background-attachment:inherit }
+.flickerplate ul.flicks>li{background-attachment:fixed; }
 /*菜单页*/
 .menu_list_wrap{ position: absolute; left: 50%; top:50%; transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); overflow: hidden;width: 80%; text-align: center;  }
 .menu_list:first-of-type{padding-bottom: .1rem; border-bottom:1px solid #727171;}
