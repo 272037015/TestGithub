@@ -144,9 +144,9 @@ input,img{border:none;}
 }
 
 /*首页*/
-.index_body{ /*background-color: #000; overflow-y: hidden;*/}
+.index_body{ background-color: #000; overflow-y: hidden;}
 /*重写 轮播*/
-.flickerplate ul.flicks>li{ background-size: 100%; background-repeat: no-repeat;}
+.flickerplate ul.flicks>li{ background-repeat: no-repeat;}
 /*首页-菜单*/
 .nav_list{ position: fixed; bottom:15%; left: 0; right: 0; z-index: 1; overflow: hidden; margin:0 .38rem; }
 .nav_list li{ float: left; width: 50%; padding:0 .18rem; box-sizing: border-box; text-align: center; margin-top: .2rem; }
