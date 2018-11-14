@@ -162,7 +162,6 @@ $(function () {
 function validate(type) {
     var phone = $('#showCustomerInput').val(); //手机号码
     var regPhone = /^1[3456789]{1}\d{9}$/; //手机正则
-    var getCode = $('#getCode').val(); //验证码
     //验证手机号
     if (phone === '') {
         app.unit.msg('请输入手机号码')
