@@ -29,8 +29,6 @@ input,img{border:none;}
 /*原子类库*/
 .mb10{margin-bottom:.1rem;}
 .hide{display: none;}
-/* 提升页面滑动的流畅度 */
-*{ touch-action: none; }
 
 /*公共顶部*/
 .m_head_wrap{ height: 1.16rem; overflow: hidden;}
