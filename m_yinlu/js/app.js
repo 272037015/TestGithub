@@ -70,7 +70,7 @@ var app = {
         Fpic.eq(0).fadeIn(); //第一个显示
         var now = 0;//初始值
         //按照指定的周期
-        setInterval(function() {
+         setInterval(function() {
             if (now >= FpicNum - 1) {
                 Fpic.eq(FpicNum - 1).stop().fadeOut(2000); //停止前面返回元素所有动画效果；添加一个新动画，淡出，耗时2000ms
                 now = -1;
@@ -79,6 +79,7 @@ var app = {
             now++;
             Fpic.eq(now).stop().fadeIn(2000); //显示
         }, 3000);
+        
 
 
         $('#J_auto_height').height(window.innerHeight>568?window.innerHeight:568)
