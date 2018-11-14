@@ -48,6 +48,7 @@ input,img{border:none;}
 .m_contact{ overflow: hidden; text-align: center; margin-bottom:.4rem; }
 .m_c_title{ font-size: .36rem;overflow: hidden; text-align: center; margin-bottom: .2rem; color: #000; font-weight: 700}
 .m_c_tel{ color: #727171; display: inline-block; border-bottom:1px solid #727171;font-size: .28rem; }
+.m_c_tel a{color: #727171;}
 .m_c_time{color: #727171;font-size: .28rem;  margin-top: .1rem; }
 
 /*公共尾部*/
@@ -83,7 +84,7 @@ input,img{border:none;}
 @-webkit-keyframes fixedLoad {0% {-webkit-transform: rotate(0);transform: rotate(0);}100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}}
 
 /*公共alert*/
-.m_fixed_alert{z-index:35;position: fixed;top:-50%;background-color: rgba(0,0,0,.6);color: #fff;padding:5px 10px;left:50%;max-width: 80%;transform: translateX(-50%);-webkit-transform: translateX(-50%);border-radius: 10px;transition: all .3s;-webkit-transition: all .3s}
+.m_fixed_alert{z-index:35;position: fixed;top:-50%;background-color: rgba(0,0,0,.6);color: #fff;padding:5px 10px;left:50%;max-width: 80%;transform: translateX(-50%);-webkit-transform: translateX(-50%);border-radius: 10px;transition: all .3s;-webkit-transition: all .3s;}
 .fixed_alert_show{top:160px;-webkit-animation: alertAnim .3s linear;animation: alertAnim .3s linear;}
 @keyframes alertAnim {0% {transform: translateX(-50%);-webkit-transform: translateX(-50%);}20% {transform: translateX(-45%);-webkit-transform: translateX(-45%);}40% {transform: translateX(-55%);-webkit-transform: translateX(-55%);}60% {transform: translateX(-45%);-webkit-transform: translateX(-45%);}80% {transform: translateX(-55%);-webkit-transform: translateX(-55%);}100% {transform: translateX(-50%);-webkit-transform: translateX(-50%);}}
 @-webkit-keyframes alertAnim {0% {transform: translateX(-50%);-webkit-transform: translateX(-50%);}20% {transform: translateX(-45%);-webkit-transform: translateX(-45%);}40% {transform: translateX(-55%);-webkit-transform: translateX(-55%);}60% {transform: translateX(-45%);-webkit-transform: translateX(-45%);}80% {transform: translateX(-55%);-webkit-transform: translateX(-55%);}100% {transform: translateX(-50%);-webkit-transform: translateX(-50%);}}
