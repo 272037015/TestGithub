@@ -72,12 +72,12 @@ var app = {
         //按照指定的周期
         setInterval(function() {
             if (now >= FpicNum - 1) {
-                Fpic.eq(FpicNum - 1).stop().fadeOut(1500); //停止前面返回元素所有动画效果；添加一个新动画，淡出，耗时1500ms
+                Fpic.eq(FpicNum - 1).stop().fadeOut(2000); //停止前面返回元素所有动画效果；添加一个新动画，淡出，耗时2000ms
                 now = -1;
             }
-            Fpic.eq(now).stop().fadeOut(1500); //隐藏
+            Fpic.eq(now).stop().fadeOut(2000); //隐藏
             now++;
-            Fpic.eq(now).stop().fadeIn(1500); //显示
+            Fpic.eq(now).stop().fadeIn(2000); //显示
         }, 3000);
 
 
