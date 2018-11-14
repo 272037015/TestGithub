@@ -64,21 +64,20 @@ var app = {
     },
     // 首页背景轮播
     isBg: function() {
-        var Fpic = $("#indexBg li");
-        //图片自适应浏览器窗口大小
-        var winW, winH;
+        var Fpic = $("#indexBg li"); //获取li
         //图片轮播动画
-        var FpicNum = Fpic.length;
-        Fpic.eq(0).fadeIn();
-        var now = 0;
+        var FpicNum = Fpic.length; //获取li个数
+        Fpic.eq(0).fadeIn(); //第一个显示
+        var now = 0;//初始值
+        //按照指定的周期
         setInterval(function() {
             if (now >= FpicNum - 1) {
-                Fpic.eq(FpicNum - 1).stop().fadeOut(1500);
+                Fpic.eq(FpicNum - 1).stop().fadeOut(1500); //停止前面返回元素所有动画效果；添加一个新动画，淡出，耗时1500ms
                 now = -1;
             }
-            Fpic.eq(now).stop().fadeOut(1500);
+            Fpic.eq(now).stop().fadeOut(1500); //隐藏
             now++;
-            Fpic.eq(now).stop().fadeIn(1500);
+            Fpic.eq(now).stop().fadeIn(1500); //显示
         }, 3000);
 
 
