@@ -72,7 +72,6 @@ var app = {
         Fpic.eq(0).fadeIn();
         var now = 0;
         setInterval(function() {
-
             if (now >= FpicNum - 1) {
                 Fpic.eq(FpicNum - 1).stop().fadeOut(500);
                 now = -1;
