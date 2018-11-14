@@ -73,12 +73,12 @@ var app = {
         var now = 0;
         setInterval(function() {
             if (now >= FpicNum - 1) {
-                Fpic.eq(FpicNum - 1).stop().fadeOut(2000);
+                Fpic.eq(FpicNum - 1).stop().fadeOut(1500);
                 now = -1;
             }
-            Fpic.eq(now).stop().fadeOut(2000);
+            Fpic.eq(now).stop().fadeOut(1500);
             now++;
-            Fpic.eq(now).stop().fadeIn(2000);
+            Fpic.eq(now).stop().fadeIn(1500);
         }, 3000);
 
 
