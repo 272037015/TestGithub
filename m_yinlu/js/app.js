@@ -73,13 +73,13 @@ var app = {
         var now = 0;
         setInterval(function() {
             if (now >= FpicNum - 1) {
-                Fpic.eq(FpicNum - 1).stop().fadeOut(500);
+                Fpic.eq(FpicNum - 1).stop().fadeOut(3000);
                 now = -1;
             }
-            Fpic.eq(now).stop().fadeOut(500);
+            Fpic.eq(now).stop().fadeOut(3000);
             now++;
-            Fpic.eq(now).stop().fadeIn(500);
-        }, 3500);
+            Fpic.eq(now).stop().fadeIn(3000);
+        }, 3000);
 
 
         $('#J_auto_height').height(window.innerHeight)
