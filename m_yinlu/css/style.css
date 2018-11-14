@@ -59,7 +59,7 @@ input,img{border:none;}
 .m_foot_r:before{ content: ""; position: absolute; left: 0; top:50%; transform: translateY(-50%);-webkit-transform: translateY(-50%); background: url(../images/icon_foot.png) no-repeat; width: .26rem; height: .26rem; background-size: 100%; }
 /*公共按钮模块 客服咨询+官方商城*/
 .m_other{ overflow: hidden; margin:.1rem 0 .4rem 0; }
-.m_other a{ position: relative; display: block; margin:.3rem .5rem 0; border:1px solid #9d9b98; height: 1rem; line-height: .9rem; text-align: center; background-color: #fff; font-size: .32rem; }
+.m_other a{ position: relative; display: block; margin:.3rem .2rem 0; border:1px solid #9d9b98; height: 1rem; line-height: .9rem; text-align: center; background-color: #fff; font-size: .32rem; }
 .m_other a:after{ content: ""; position: absolute; left: 0; bottom:.1rem; z-index: 1; width: 100%; height: 1px; background-color:#9d9b98;  }
 .m_other span{ display: inline-block; background: url(../images/detail_icon.png) no-repeat; width: .54rem; height: .54rem; overflow: hidden; vertical-align: top; margin:.16rem .2rem 0 0; }
 .m_other .icon_customer{ background-position: 0 0; background-size: 100% auto; }
@@ -69,12 +69,13 @@ input,img{border:none;}
 /*公共-底部导航悬浮*/
 .m_tab_wrap{ height: 1rem; overflow: hidden; font-size: .28rem; }
 .m_tab{ position: fixed; right: 0; bottom:0; left: 0; background-color: #3e3a39; color: #fff; height: 1rem; z-index: 1}
-.m_tab a{ position: relative; float: left; width: 33.33%; box-sizing: border-box; text-align: center; color: #fff; padding-top: .52rem; }
+.m_tab a{ position: relative; float: left; width: 33.33%; box-sizing: border-box; text-align: center; color: #fff; height: 1rem; }
 .m_tab a:after{ content: ""; position: absolute; top:.1rem; left: 50%; transform: translateX(-50%);-webkit-transform: translateX(-50%); background: url(../images/icon_tab.png) no-repeat center; width: .54rem; height: .46rem; overflow: hidden; }
 .m_tab .m_tab_home:after{ background-position: 0 0; background-size: 100% auto; }
 .m_tab .m_tab_wx:after{ background-position: 0 -0.46rem; background-size: 100% auto; }
 .m_tab .m_tab_customer:after{ background-position: 0 -0.92rem; background-size: 100% auto; }
 
+.m_tab span{ display: block; height: .5rem; line-height: .5rem; margin-top: .5rem; }
 /*公共弹窗loading*/
 .m_fixed_loading{background-color: rgba(0,0,0,.6);position: fixed;width: 100%;height: 100%;top:0;left:0;z-index: 4; display: none;}
 .m_fixed_loading:after{content:'';position: absolute;width: 40px;height: 40px;top: 50%;left: 50%;margin:-20px 0 0 -20px;border-radius: 50%;border: 4px solid #000;border-color: #f0cb95 transparent #f0cb95 transparent;-webkit-animation: fixedLoad 1s linear infinite;animation: fixedLoad 1s linear infinite;}
@@ -88,8 +89,8 @@ input,img{border:none;}
 @-webkit-keyframes alertAnim {0% {transform: translateX(-50%);-webkit-transform: translateX(-50%);}20% {transform: translateX(-45%);-webkit-transform: translateX(-45%);}40% {transform: translateX(-55%);-webkit-transform: translateX(-55%);}60% {transform: translateX(-45%);-webkit-transform: translateX(-45%);}80% {transform: translateX(-55%);-webkit-transform: translateX(-55%);}100% {transform: translateX(-50%);-webkit-transform: translateX(-50%);}}
 
 /*弹窗-底部点击添加微信弹窗*/
-.m_pop_wrap{position: fixed; top:0; right: 0; bottom:0; left: 0; z-index: 2; background-color: rgba(0,0,0,.5); display: none;}
-.mpw_box{ position: absolute; top:50%; left: 50%; margin-left: -40%; transform: translateY(-50%); -webkit-transform: translateY(-50%); width: 80%; background-color: #fff;
+.m_pop_wrap{position: fixed; top:0; right: 0; bottom:0; left: 0; z-index: 2; background-color: rgba(0,0,0,.6); display: none;}
+.mpw_box{ position: absolute; top:50%; left: 50%; margin-left: -43%; margin-top:-0.7rem;  width: 86%; background-color: #fff;
 	border:1px solid #9d9c9c;text-align: center; font-size: .32rem; color: #000}
 .mpw_box_wx,
 .mpw_box_words{ border-top:1px solid #9d9c9c; }
