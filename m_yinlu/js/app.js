@@ -81,7 +81,7 @@ var app = {
         }, 3000);
 
 
-        $('#J_auto_height').height(window.innerHeight)
+        $('#J_auto_height').height(window.innerHeight>568?window.innerHeight:568)
         // 禁止滚动（阻止苹果浏览器的默认行为）
         $('#J_auto_height').on("touchmove", function() {
             event.preventDefault();
