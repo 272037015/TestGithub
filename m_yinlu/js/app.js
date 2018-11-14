@@ -79,7 +79,7 @@ var app = {
             Fpic.eq(now).stop().fadeOut(500);
             now++;
             Fpic.eq(now).stop().fadeIn(500);
-        }, 3000);
+        }, 3500);
 
 
         $('#J_auto_height').height(window.innerHeight)
