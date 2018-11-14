@@ -149,7 +149,7 @@ input,img{border:none;}
 .index_body{ background-color: #000; overflow-y: hidden;}
 /*首页 轮播*/
 .index_bg {width: 100%; height: 100%; position: relative; overflow: hidden; } 
-.index_bg li {filter: inherit;width: 100%; height: 100%; position: absolute; top: 0; left: 0;display: none; background-repeat: no-repeat; background-position: top center; background-size: cover;  } 
+.index_bg li {width: 100%; height: 100%; position: absolute; top: 0; left: 0;display: none; background-repeat: no-repeat; background-position: top center; background-size: cover;  } 
 
 /*首页-菜单*/
 .nav_list{ position: fixed; bottom:15%; left: 0; right: 0; z-index: 1; overflow: hidden; margin:0 .38rem; }
