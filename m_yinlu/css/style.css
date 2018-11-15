@@ -150,10 +150,8 @@ input,img{border:none;}
 /*首页 轮播*/
 .index_bg {width: 100%; height: 100%; position: relative; overflow: hidden; } 
 .index_bg li {width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-repeat: no-repeat; background-position: top center; background-size: cover;  opacity: 0; /*初始不透明度为0，图片都看不见*/
-  transition: opacity 1s linear; /*--重点--定义一个关于透明度的transition*/} 
-.index_bg li.active{
-  opacity: 1; /*有active类的图片不透明度为1，即显示图片*/
-}
+  transition: opacity 1s linear; } 
+.index_bg li.active{opacity: 1; }
 /*首页-菜单*/
 .nav_list{ position: fixed; bottom:15%; left: 0; right: 0; z-index: 1; overflow: hidden; margin:0 .38rem; }
 .nav_list li{ float: left; width: 50%; padding:0 .18rem; box-sizing: border-box; text-align: center; margin-top: .2rem; }
