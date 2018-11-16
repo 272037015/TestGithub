@@ -9,12 +9,8 @@
  * --尽量避免多层级：.index_abc .ia_bcd{}
  */
 /*reset*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, 
-strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, 
-tfoot, thead, tr, th, td ,textarea,input { margin:0; padding:0;  }
-address,cite,dfn,em,var, i {font-style:normal;}
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, strong, ul, li, form, label, textarea,input { margin:0; padding:0;  }
 body {font-size: 16px; line-height: 1.5; font-family:'Microsoft Yahei','simsun','arial','tahoma';  color: #3a3a3a; background-color: #f8f8f8; }
-table { border-collapse:collapse; border-spacing:0; }
 h1, h2, h3, h4, h5, h6, th { font-size: 100%; font-weight: normal; }
 button,input,select,textarea{font-size:100%;}
 fieldset,img{border:0;}
@@ -113,7 +109,17 @@ ul, ol { list-style: none; }
 .hp_rh_product{ float:left; width: 170px; overflow: hidden; text-align: center;  }
 .hp_rh_pic{ display: block; width: 100px; height: 100px; margin:35px auto 20px; border-radius: 10px; }
 .hp_rh_statistics{ width: 170px; float: right; text-align: center;}
-.hp_rh_num{ width: 100px;height: 100px; background-color: #666; overflow: hidden; margin:35px auto 20px; }
+.hp_rh_circle {width: 100px; height: 100px; position: relative; border-radius: 50%; background-color: #e8514c; margin: 35px auto 20px} 
+.hp_rh_pie_left, 
+.hp_rh_pie_right {width: 100px; height: 100px; position: absolute; top: 0; left: 0 } 
+.hp_rh_pie_left .left, 
+.hp_rh_pie_right .right {width: 100px; height: 100px; background-color: #ececec; border-radius: 50%; position: absolute; top: 0; left: 0 } 
+.hp_rh_pie_right, 
+.hp_rh_pie_right .right {clip: rect(0, auto, auto, 50px); transition: transform 1s ease-in 0s; -webkit-transition: -webkit-transform 1s ease-in 0s; -moz-transition: -moz-transform 1s ease-in 0s } 
+.hp_rh_pie_left, 
+.hp_rh_pie_left .left {clip: rect(0, 50px, auto, 0); transition: transform .4s ease-in 1s; -webkit-transition: -webkit-transform .4s ease-in 1s; -moz-transition: -moz-transform .4s ease-in 1s } 
+.hp_rh_mask {width: 88px; height: 88px; border-radius: 50%; left: 6px; top: 6px; background-color: #fff; position: absolute; line-height: 88px; font-size: 18px; }
+.hp_rh_mask .num{ font-size: 24px; }
 
 .hp_r_list{width: 170px; height: 216px; border-left:1px solid #f8f8f8;border-bottom:1px solid #f8f8f8; float: left; display: block; text-align: center;border-radius: 10px;}
 
@@ -193,11 +199,11 @@ ul, ol { list-style: none; }
 .lf_words{ position: relative; color: #e8514c; font-size: 30px; padding-left: 20px; }
 .lf_words:before{ content: ""; position: absolute; left: 0; top:50%; margin-top: -14px; width: 6px; height: 28px; background-color: #e8514c; border-radius: 3px; }
 .lf_ul{ overflow: hidden; }
-.lf_li{position: relative;padding: 3px 0 3px 54px;border: 1px solid #e7e7eb; margin-top: 22px; background-color: #f5f5f5;}
+.lf_li{position: relative;padding-left:54px; margin-top: 22px; background-color: #f5f5f5;}
 .icon_login {position: absolute; left: 15px; top: 50%; margin-top: -10px; width: 20px; height: 20px; vertical-align: middle; display: inline-block;background-image: url(../images/icon.png); background-repeat: no-repeat;} 
 .icon_login.un {background-position: -30px -166px;}
 .icon_login.pwd {background-position: -50px -166px;}
-.lf_li_input {border: 0; outline: 0; padding: 5px 0; vertical-align: middle; width: 100%; height: 30px; line-height: 30px; background-color: #f5f5f5;}
+.lf_li_input {border: 0; outline: 0; vertical-align: middle; width: 100%; height: 54px; line-height: 54px; background-color: #f5f5f5;}
 .lf_help_panel {overflow: hidden;margin-top: 20px;}
 .lf_checked{ float: left; }
 .lf_pwd{float: right}
