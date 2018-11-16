@@ -30,15 +30,15 @@ ul, ol { list-style: none; }
 .public_head{ position: fixed; left: 0; top:0; right: 0; z-index: 11; height: 74px; line-height: 74px; overflow: hidden; background-color: #fff;  }
 .public_h_logo{ position: absolute; left: 0; top:0; width: 200px; height: 74px; margin-left: 30px; }
 .public_h_nav{ position: absolute;left: 250px; top:0; }
-.public_h_nav a{ height: 74px; float: left; padding:0 20px; font-size: 22px; margin:0 20px;}
+.public_h_nav a{ height: 74px; float: left; padding:0 20px; font-size: 20px; margin:0 20px;}
 .public_h_nav a:hover,
-.public_h_nav .current{ height: 72px; line-height: 72px; font-weight: 700; color: #e8514c; border-bottom:2px solid #e8514c; }
+.public_h_nav .current{ height: 72px; line-height: 72px; color: #e8514c; border-bottom:2px solid #e8514c; }
 .public_h_r{ position: absolute;right: 30px; top: 0; color: #000; padding-left: 50px; }
 .public_h_r:before{ content: ""; position: absolute; left: 0; top:50%; margin-top:-20px; background: url(../images/icon.png) no-repeat 0 -126px; width: 40px; height: 40px; }
 .public_h_r a{ color: #000 }
 /*公共标题*/
-.public_title{ position: relative; height: 70px; line-height: 70px; margin-top: 18px; font-size: 30px; font-weight: 700; padding-left: 10px; }
-.public_title:before{ content: ""; position: absolute; left: 0; top:28px; width: 4px; height: 20px; background-color: #8b8b8b; border-radius: 3px; }
+.public_title{ position: relative; height: 70px; line-height: 70px; margin-top: 18px; font-size: 20px; font-weight: 700; padding-left: 10px; }
+.public_title:before{ content: ""; position: absolute; left: 0; top:26px; width: 4px; height: 20px; background-color: #8b8b8b; border-radius: 3px; }
 /*公共尾部*/
 .public_foot_wrap{ overflow: hidden; padding:30px 0;}
 .public_foot{ overflow: hidden;  }
@@ -61,7 +61,7 @@ ul, ol { list-style: none; }
 /*公共 右侧悬浮联系方式*/
 .public_fixed_contact{ position: fixed; right: -375px; top:50%; margin-top: -134px; z-index: 1; background-color: #df4b46; height: 268px; color: #fff; overflow: hidden;
 	border-top-left-radius: 10px; border-bottom-left-radius: 10px; width: 425px;}
-.public_fc_tip{ position: relative; background-color: #e8514c; width: 28px; padding:50px 15px 0; text-align: center; font-size: 24px; height: 218px; float: left;
+.public_fc_tip{ position: relative; background-color: #e8514c; width: 28px; padding:70px 15px 0; text-align: center; font-size: 20px; height: 200px; line-height: 30px; float: left;
 	border-top-left-radius: 10px; border-bottom-left-radius: 10px;}
 .public_fc_tip:before{ content: ""; position: absolute; top:10px; left: 10px; background:url(../images/icon.png) no-repeat 0 -90px; width: 36px; height: 36px; }
 .public_fc_arrow{ position: absolute; left: 0; bottom:0; width: 58px; height: 54px; overflow: hidden; background-color: #9c3733; display: block; border-bottom-left-radius: 10px; }
@@ -104,11 +104,14 @@ ul, ol { list-style: none; }
 .hp_left{ overflow: hidden;float: left; width: 374px; height: 432px; }
 .hp_left .pic{ display: block; margin:36px auto 0; }
 
-.hp_right{ overflow: hidden;float: right; width: 855px; }
-.hp_r_highest{ border-left:1px solid #f8f8f8;border-bottom:1px solid #f8f8f8;width: 341px; height: 216px; overflow: hidden; float: left; }
-.hp_rh_product{ float:left; width: 170px; overflow: hidden; text-align: center;  }
+.hp_right{ overflow: hidden;float: right; width: 854px; }
+.hp_r_highest{ border-right:1px solid #f8f8f8;border-bottom:1px solid #f8f8f8;height: 216px; overflow: hidden; float: left; background-color: #fff; }
+.hp_r_last{ border-right:1px solid #f8f8f8;border-bottom:1px solid #f8f8f8;height: 216px; overflow: hidden; float: left; background-color: #fff; }
+.J_currentProduct {background-color: #fdfdfd; cursor: pointer;}
+.J_currentProduct .hp_rh_statistics{ display: block; }
+.hp_rh_product{ float:left; width: 169px; overflow: hidden; text-align: center;  }
 .hp_rh_pic{ display: block; width: 100px; height: 100px; margin:35px auto 20px; border-radius: 10px; }
-.hp_rh_statistics{ width: 170px; float: right; text-align: center;}
+.hp_rh_statistics{ width: 170px; float: right; text-align: center; display: none;}
 .hp_rh_circle {width: 100px; height: 100px; position: relative; border-radius: 50%; background-color: #e8514c; margin: 35px auto 20px} 
 .hp_rh_pie_left, 
 .hp_rh_pie_right {width: 100px; height: 100px; position: absolute; top: 0; left: 0 } 
@@ -121,13 +124,14 @@ ul, ol { list-style: none; }
 .hp_rh_mask {width: 88px; height: 88px; border-radius: 50%; left: 6px; top: 6px; background-color: #fff; position: absolute; line-height: 88px; font-size: 18px; }
 .hp_rh_mask .num{ font-size: 24px; }
 
-.hp_r_list{width: 170px; height: 216px; border-left:1px solid #f8f8f8;border-bottom:1px solid #f8f8f8; float: left; display: block; text-align: center;border-radius: 10px;}
+/*.hp_r_list{width: 170px; height: 216px; border-left:1px solid #f8f8f8;border-bottom:1px solid #f8f8f8; float: left; display: block; text-align: center;border-radius: 10px;}*/
 
 /*首页-合作伙伴*/
 .cooperative_partner{ overflow: hidden; }
 .cooperative_partner a{ border-bottom:1px solid #f8f8f8;border-right:1px solid #f8f8f8;width: 245px; height: 136px; overflow: hidden; float: left; }
-.cooperative_partner img{ display: block; width: 246px; height: 136px; }
-.cooperative_partner a:hover{ background-color: #eee}
+.cooperative_partner img{ display: block; width: 246px; height: 136px;-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%); }
+.cooperative_partner a:hover img{ -webkit-filter: none;filter: none;}
 
 /*联盟介绍页*/
 /*当页公共标题*/
@@ -174,7 +178,7 @@ ul, ol { list-style: none; }
 /*产品介绍页*/
 .product{ overflow: hidden; width: 1800px; margin:0 auto; }
 .product_title{ overflow: hidden; text-align: center; margin:40px 0 20px; color: #2e2e2e;}
-.product_title span{ height: 56px; line-height: 56px; font-size: 30px; font-weight: 700; border:1px solid #b6b6b6; border-radius: 30px; padding:0 40px;display: inline-block;  }
+.product_title span{ height: 56px; line-height: 56px; font-size: 20px; font-weight: 700; border:1px solid #b6b6b6; border-radius: 30px; padding:0 40px;display: inline-block;  }
 .product_words{ text-align: center; font-size: 18px; }
 
 .product_list{ overflow: hidden; margin-top: 30px; margin-bottom: 80px; }
@@ -183,14 +187,14 @@ ul, ol { list-style: none; }
 .pl_pic img{ display:block; width: 100%;  }
 .pl_t{ text-align: center; color: #2e2e2e; font-size: 22px; height: 50px; line-height: 50px; }
 .pl_words{ height: 50px; overflow: hidden; line-height: 26px; }
-.pl_btn{color: #2e2e2e;border:1px solid #b6b6b6;border-radius: 30px; width: 156px; height: 38px; line-height: 38px; display: block; text-align: center; font-size: 22px; margin:20px auto 0; }
+.pl_btn{color: #2e2e2e;border:1px solid #b6b6b6;border-radius: 30px; width: 156px; height: 38px; line-height: 38px; display: block; text-align: center; font-size: 20px; margin:20px auto 0; }
 .pl_btn:hover{ background-color: #da4d49; border-color: #da4d49; color: #fff; }
 /*帮助中心页*/
 .help_box{ overflow: hidden; margin-bottom: 80px; }
 .hb_list{ overflow: hidden; }
 .hb_list li{ overflow: hidden; border-bottom:1px solid #f8f8f8; padding:30px; }
-.hb_list_title{ font-size: 24px; margin-bottom: 20px; }
-.hb_list_txt{ color: #3a3a3a; font-size: 18px; }
+.hb_list_title{ font-size: 20px; margin-bottom: 20px; }
+.hb_list_txt{ color: #3a3a3a;  }
 
 /*登录页*/
 .login_box_wrap{overflow:hidden; background: url(../images/bg_login.jpg) no-repeat top center; height: 790px; }

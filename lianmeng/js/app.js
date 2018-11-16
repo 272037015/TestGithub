@@ -55,6 +55,16 @@ var app = {
             $(".J_circleRight").css('transform', "rotate(" + (num - 180) + "deg)");
         }
     },
+    // 首页-热门产品
+    hotProducts:function() {
+        var oli = $("#hotProducts .hp_r_highest");
+        oli.mouseover(function(){
+            $(this).siblings().removeClass("J_currentProduct"); 
+            $(this).addClass("J_currentProduct"); 
+            
+        
+        })
+    },
     
    
     //验证表单
