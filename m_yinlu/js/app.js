@@ -160,7 +160,7 @@ var app = {
     isMaster: function() {
         var moreBtn = $("#listMore"),
             theEnd = $("#theEnd")
-        $("#listMaster li:gt(5)").addClass('hide');
+        $("#listMaster li:gt(7)").addClass('hide');
         moreBtn.on("click", function() {
             $(this).hide();
             theEnd.show();
