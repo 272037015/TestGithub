@@ -80,7 +80,7 @@ input,img{border:none;}
 
 .m_tab .m_tab_customer:after{ background-position: 0 -0.46rem; background-size: 100% auto; }
 .m_tab .m_tab_home{ left: .5rem; top:0;  }
-.m_tab .m_tab_customer{ left: 2.7rem; top:0;  }
+.m_tab .m_tab_customer{ left: 35%; top:0;  }
 .m_tab span{ display: inline-block; padding-left: .6rem; vertical-align: middle; height: 1rem; line-height: .96rem }
 .m_tab em{ display: block; font-style: normal; line-height: .24rem; padding-top: .6em;}
 .m_tab .letter{letter-spacing:.04rem;}
