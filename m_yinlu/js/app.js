@@ -94,8 +94,14 @@ var app = {
     customerService: function() {
         var that = this,
             showTelForm = $("#showTelForm"), //获取点击事件(客服咨询)
+            tabCustomer = $("#tabCustomer"),//底部悬浮导航客服咨询
             showPopCustomer = $("#showPopCustomer") //客服咨询弹窗
         showTelForm.on("click", function() {
+            that.unit.setPopup();
+            showPopCustomer.show()
+
+        })
+        tabCustomer.on("click", function() {
             that.unit.setPopup();
             showPopCustomer.show()
 
