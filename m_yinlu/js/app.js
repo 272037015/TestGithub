@@ -44,24 +44,6 @@ var app = {
             }, 2500);
         }
     },
-    //公共底部悬浮 添加微信
-    addWeChat: function() {
-        var that = this,
-            addBtn = $("#addWeChat"), //获取点击按钮
-            showPopWeixin = $("#showPopWeixin") //弹窗-添加微信号
-        addBtn.on("click", function() {
-            that.unit.setPopup();
-            showPopWeixin.show();
-        })
-        showPopWeixin.on("click", function(e) {
-            if ($(e.target).closest("#showWeixinBox").length > 0) {
-                $(this).show();
-            } else {
-                that.unit.unsetPopup();
-                $(this).hide();
-            }
-        })
-    },
     // 首页背景轮播
     isBg: function() {
         var slideshow = $("#indexBg li"),
