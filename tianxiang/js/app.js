@@ -108,6 +108,16 @@ var app = {
         var userSex = $("#userSex");//性别
         var confirmBtn = $("#confirmBtn");//确认提交按钮
         confirmBtn.on("click",function(){
+            var input1 = $("#userName input");
+            var input2 = $("#userIphone input");
+        if(!input.length) return;
+        //禁止手机端点击input框跳出输入法
+        input1.focus(function(){
+            this.blur();
+        });
+        input2.focus(function(){
+            this.blur();
+        });
             if (!userName.val()) {
                 userIphone.focus();
                 return app.unit.msg('姓名不能为空');
@@ -135,10 +145,6 @@ var app = {
         for(var i=0,max=input.length;i<max;i++){
             var calendar = new ruiDatepicker().init('#'+$('.J_datepicker').eq(i).attr('id'));
         }
-        //禁止手机端点击input框跳出输入法
-        input.focus(function(){
-            this.blur();
-        });
     },
     //登录 弹窗
     popLogin:function() {
