@@ -135,6 +135,10 @@ var app = {
         for(var i=0,max=input.length;i<max;i++){
             var calendar = new ruiDatepicker().init('#'+$('.J_datepicker').eq(i).attr('id'));
         }
+        //禁止手机端点击input框跳出输入法
+        input.focus(function(){
+            this.blur();
+        });
     },
     //登录 弹窗
     popLogin:function() {

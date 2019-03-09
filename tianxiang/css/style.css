@@ -164,7 +164,7 @@ align-items: center;}
 .m_nav .current .m_nav_me,
 .m_nav a:active .m_nav_me{ background-image: url(../images/icon_me_active.png); }
 /*没有更多*/
-.m_more_over{ text-align: center; line-height: .8rem; color: #999; width: 100% }
+.m_more{ text-align: center; line-height: .8rem; color: #999; width: 100% }
 
 /*banner轮播*/
 .swiper-slide{ display: block; }
