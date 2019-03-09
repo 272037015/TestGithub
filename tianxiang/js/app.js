@@ -110,7 +110,7 @@ var app = {
         confirmBtn.on("click",function(){
             var input1 = $("#userName input");
             var input2 = $("#userIphone input");
-        if(!input.length) return;
+        
         //禁止手机端点击input框跳出输入法
         input1.focus(function(){
             this.blur();
